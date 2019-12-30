@@ -1,8 +1,5 @@
-#ifndef MAIN_SSD1366_H_
-#define MAIN_SSD1366_H_
-
-// Following definitions are bollowed from 
-// http://robotcantalk.blogspot.com/2015/03/interfacing-arduino-with-ssd1306-driven.html
+#ifndef SSD1366_H_
+#define SSD1366_H_
 
 #define VERTICAL_FLIP                   0
 
@@ -55,4 +52,4 @@
 #define OLED_CMD_SET_COMSCANDEC         0xC8
 #define OLED_CMD_SEGREMAP               0xA0
 
-#endif /* MAIN_SSD1366_H_ */
+#endif

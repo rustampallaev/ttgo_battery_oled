@@ -32,7 +32,7 @@ void app_main(void)
             (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
 
     oled_init();
-    oled_put_text("Hello, Rustam");
+    oled_put_text("Hello, world");
 
     while(1)
     {
