@@ -6,6 +6,7 @@
 #include "esp_spi_flash.h"
 
 #include "oled.h"
+#include "radio.h"
 
 #ifdef CONFIG_IDF_TARGET_ESP32
 #define CHIP_NAME "ESP32"
@@ -33,9 +34,6 @@ void app_main(void)
 
     oled_init();
     oled_put_text("Hello, world");
-
-    while(1)
-    {
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-    }
+    
+    radio_start();
 }
